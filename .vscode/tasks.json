@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "CyberHorde Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Mac",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"IOS",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"HTML5",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"Linux",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"Shipping",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHorde TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHorde TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHorde",
+				"TVOS",
+				"Test",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Linux",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Linux",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHordeEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Linux",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Linux",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Linux",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHordeEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Linux",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Linux",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Linux",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHordeEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Linux",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Mac",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Mac",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHordeEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Mac",
+				"Debug",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Mac",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Mac",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHordeEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Mac",
+				"DebugGame",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Mac",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Mac",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"CyberHordeEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		},
+		{
+			"label": "CyberHordeEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"CyberHordeEditor",
+				"Mac",
+				"Development",
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+			}
+		}
+	]
+}

@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/.vscode": true,
+		"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/Content": true,
+		"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/Intermediate": true
+	}
+}

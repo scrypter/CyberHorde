@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "CyberHorde (Debug)",
+			"request": "launch",
+			"preLaunchTask": "CyberHorde Linux Debug Build",
+			"program": "/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/Binaries/Linux/CyberHorde-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CyberHorde (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "CyberHorde Linux DebugGame Build",
+			"program": "/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/Binaries/Linux/CyberHorde-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CyberHorde (Development)",
+			"request": "launch",
+			"preLaunchTask": "CyberHorde Linux Development Build",
+			"program": "/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/Binaries/Linux/CyberHorde",
+			"args": [
+			],
+			"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CyberHorde (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "CyberHorde Linux Shipping Build",
+			"program": "/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/Binaries/Linux/CyberHorde-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CyberHorde (Test)",
+			"request": "launch",
+			"preLaunchTask": "CyberHorde Linux Test Build",
+			"program": "/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/Binaries/Linux/CyberHorde-Linux-Test",
+			"args": [
+			],
+			"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CyberHordeEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "CyberHordeEditor Linux Debug Build",
+			"program": "/media/tomd/Storage/Linux/Engines/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject"
+			],
+			"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CyberHordeEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "CyberHordeEditor Linux DebugGame Build",
+			"program": "/media/tomd/Storage/Linux/Engines/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject"
+			],
+			"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "CyberHordeEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "CyberHordeEditor Linux Development Build",
+			"program": "/media/tomd/Storage/Linux/Engines/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject"
+			],
+			"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/media/tomd/Storage/Linux/Engines/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/CyberHorde.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/media/tomd/Storage/Linux/Engines/UnrealEngine"
+		}
+	]
+}

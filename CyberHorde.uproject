@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{00038D56-08D6-5179-7CE4-258E249A1499}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "CyberHorde",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
