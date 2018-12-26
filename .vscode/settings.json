@@ -1,7 +1,10 @@
 {
 	"files.exclude": {
+		"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/.git": true,
 		"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/.vscode": true,
 		"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/Content": true,
-		"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/Intermediate": true
+		"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/DerivedDataCache": true,
+		"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/Intermediate": true,
+		"/media/tomd/Storage/Linux/UnrealProjects/CyberHorde/Saved": true
 	}
 }
