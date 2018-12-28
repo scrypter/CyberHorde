@@ -3,11 +3,13 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GenericTeamAgentInterface.h"
+
 #include "GameFramework/Character.h"
 #include "CyberHordeCharacter.generated.h"
 
 UCLASS(config=Game)
-class ACyberHordeCharacter : public ACharacter
+class ACyberHordeCharacter : public ACharacter, public IGenericTeamAgentInterface
 {
 	GENERATED_BODY()
 
@@ -62,6 +64,11 @@ protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	// End of APawn interface
+
+	// IGenericTeamAgentInterface interface
+	FGenericTeamId TeamId;
+	virtual FGenericTeamId GetGenericTeamId() const override;
+	// END IGenericTeamAgentInterface interface
 
 public:
 	/** Returns CameraBoom subobject **/

@@ -45,6 +45,8 @@ ACyberHordeCharacter::ACyberHordeCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+
+	TeamId = FGenericTeamId(0);
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -131,4 +133,10 @@ void ACyberHordeCharacter::MoveRight(float Value)
 		// add movement in that direction
 		AddMovementInput(Direction, Value);
 	}
+}
+
+// AI information
+FGenericTeamId ACyberHordeCharacter::GetGenericTeamId() const
+{
+	return TeamId;
 }
